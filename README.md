@@ -20,7 +20,3 @@ To check out one model you can visit one of the 4 files, of which each holds a s
 - **'NeuralNetworks.ipynb'** This File Holds the Neural Network Model.
 - **'DecisionTree.ipynb'** This File Holds the Decision Tree Model.
 - **'RandomForest.ipynb'** This File Holds the Random Forest Model.
-
-## Model Evaluation
-
-### Compare each model
