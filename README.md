@@ -23,6 +23,16 @@ To check out one model you can visit one of the 4 files, of which each holds a s
 
 ## Model Evaluation
 
+### Visualize Model Comparisons through ROC Curve
+
+![ROC Curve of all models](/Images/ROC_Curve.png "ROC Curve")
+
+#### Main Analysis
+
+Here we can see a direct comparision of all the models in one image. All you need to know is that we are measuring all thresholds which provide with different predicitions based upon the model. An specifically that measurment is ratio between true positives and false positives. This meas that the more area we have under this curve leads to a higher rate of true positives and a lower rate of false positives. Hence the AUC score, so with the previous metrics and the auc score given in the curve, we get the following models in order of how efficient they are in solving this domain problem.
+
+**Logistic Regression > Neural Networks > Random Forest > Decision Trees**
+
 ### Model Metrics
 
 <table align="center">
@@ -47,6 +57,21 @@ To check out one model you can visit one of the 4 files, of which each holds a s
     </td>
   </tr>
 </table>
+
+#### Definition of Terms
+
+- Accuracy: How likely is a choice that the model makes correct?
+- F1 Score: Averages precision and recall scores.
+- Precision: How likely is a positive choice that the model makes correct?
+- NPV: How likely is a negative choice that the model makes incorrect?
+- Recall: The ratio between the models positive choice and all true positive choices.
+- Specificity: The ratio between the models negative choice and all true negative choices.
+
+#### Metrics Analysis
+
+Given the 6 metrics tested, the accuracy is usually the most usefull one and the most important one. However two other important metrics are precision and recall. Given these two metrics we can tell how many fights we are potentially missing out on in terms of betting (recall), and if the model is correct, what is the confidence of the predicion (precision). Of which we see a clear trend in most metrics favoring the models in the following order.
+
+**Logistic Regression > Neural Networks > Random Forest > Decision Trees**
 
 ### Model ROC Curves
 
@@ -73,6 +98,10 @@ To check out one model you can visit one of the 4 files, of which each holds a s
   </tr>
 </table>
 
+#### ROC Analysis
+
+An ROC Curve is a way to visualize binary classification problems. How this is done is by taking multiple thresholds and seeing how the outcomes of the models changes. This then forms curves of True Positives over False Positives maps out the relationship between the two. The AUC score is also displayed which shows the area under the curve so the higher the number, the better.
+
 ### Model Confusion Matrices
 
 <table align="center">
@@ -98,6 +127,13 @@ To check out one model you can visit one of the 4 files, of which each holds a s
   </tr>
 </table>
 
-### Visualize Model Comparisons through ROC Curve
+#### Definition of Terms
 
-![ROC Curve of all models](/Images/ROC_Curve.png "ROC Curve")
+- True Positives: Model predicts true and the result is correct.
+- False Positives: Model predicts true and the result is incorrect.
+- True Negatives: Model predicts false and the result is correct.
+- False Negatives: Model predicts false and the result is incorrect.
+
+#### Confusion Matrix Analysis
+
+A confusion matrix is a way to see all the tested data to see where the various predictions lie. With this you can see the number of true positives, false positives, true negatives, and false negatives. With this we can more accuratly see the distribution of all the metrics come into play here.
