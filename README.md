@@ -20,3 +20,84 @@ To check out one model you can visit one of the 4 files, of which each holds a s
 - **'NeuralNetworks.ipynb'** This File Holds the Neural Network Model.
 - **'DecisionTree.ipynb'** This File Holds the Decision Tree Model.
 - **'RandomForest.ipynb'** This File Holds the Random Forest Model.
+
+## Model Evaluation
+
+### Model Metrics
+
+<table align="center">
+  <tr>
+    <td>
+      <div>Logistic Regression Metrics</div>
+      <img src="Images/Metrics/LogisticRegressionMetrics.png" alt="Logistic Regression Metrics" width="80%">
+    </td>
+    <td>
+      <div>Neural Network Metrics</div>
+      <img src="Images/Metrics/NeuralNetworkMetrics.png" alt="Neural Network Metrics" width="80%">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div>Decision Tree Metrics</div>
+      <img src="Images/Metrics/DecisionTreeMetrics.png" alt="Decision Tree Metrics" width="80%">
+    </td>
+    <td>
+      <div>Random Forest Metrics</div>
+      <img src="Images/Metrics/RandomForestMetrics.png" alt="Random Forest Metrics" width="80%">
+    </td>
+  </tr>
+</table>
+
+### Model ROC Curves
+
+<table align="center">
+  <tr>
+    <td>
+      <div>Logistic Regression ROC Curve</div>
+      <img src="Images/ROC_Curves/LogisticRegressionCurve.png" alt="Logistic Regression ROC Curve" width="80%">
+    </td>
+    <td>
+      <div>Neural Network ROC Curve</div>
+      <img src="Images/ROC_Curves/NeuralNetworkCurve.png" alt="Neural Network ROC Curve" width="80%">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div>Decision Tree ROC Curve</div>
+      <img src="Images/ROC_Curves/DecisionTreeCurve.png" alt="Decision Tree ROC Curve" width="80%">
+    </td>
+    <td>
+      <div>Random Forest ROC Curve</div>
+      <img src="Images/ROC_Curves/RandomForestCurve.png" alt="Random Forest ROC Curve" width="80%">
+    </td>
+  </tr>
+</table>
+
+### Model Confusion Matrices
+
+<table align="center">
+  <tr>
+    <td>
+      <div>Logistic Regression Confusion Matrix</div>
+      <img src="Images/ConfusionMatrices/LogisticRegressionMatrix.png" alt="Logistic Regression Confusion Matrix" width="80%">
+    </td>
+    <td>
+      <div>Neural Network Confusion Matrix</div>
+      <img src="Images/ConfusionMatrices/NeuralNetworkMatrix.png" alt="Neural Network Confusion Matrix" width="80%">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div>Decision Tree Confusion Matrix</div>
+      <img src="Images/ConfusionMatrices/DecisionTreeMatrix.png" alt="Decision Tree Confusion Matrix" width="80%">
+    </td>
+    <td>
+      <div>Random Forest Confusion Matrix</div>
+      <img src="Images/ConfusionMatrices/RandomForestMatrix.png" alt="Random Forest Confusion Matrix" width="80%">
+    </td>
+  </tr>
+</table>
+
+### Visualize Model Comparisons through ROC Curve
+
+![ROC Curve of all models](/Images/ROC_Curve.png "ROC Curve")
